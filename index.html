@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Liu - Computer Science Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-bold text-2xl text-blue-600">Michael Liu</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition">Experience</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+                <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600">Skills</a>
+                <a href="#experience" class="block py-2 text-gray-700 hover:text-blue-600">Experience</a>
+                <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600">Projects</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">LIU Yuxuan, Michael</h1>
+                    <p class="text-xl md:text-2xl mb-6 text-blue-100">Computer Science Student & Tech Enthusiast</p>
+                    <p class="text-lg mb-8 text-blue-100">Building digital tools that solve everyday problems</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition text-center">Get in Touch</a>
+                        <a href="#projects" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition text-center">View Projects</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="profile-photo.jpg" alt="Michael Liu" class="w-64 h-64 md:w-80 md:h-80 rounded-full mx-auto shadow-2xl border-8 border-white object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Who I Am</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        I'm a motivated and enthusiastic individual with a strong interest in IT and computer science. Currently pursuing a BSc (Hons) in Computer Science at Hong Kong Polytechnic University, I bring a unique blend of academic knowledge and practical experience.
+                    </p>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        With a background in cybersecurity and software development, I'm eager to learn, grow, and improve my skills in building innovative solutions that make a real impact.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        I'm passionate about exploring technology frontiers and enjoying the outdoors through cycling.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Education</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <h4 class="text-xl font-semibold text-gray-900">BSc (Hons) Computer Science</h4>
+                            <p class="text-gray-600">Hong Kong Polytechnic University | Sep 2024 -</p>
+                            <p class="text-gray-700 text-sm mt-2">Broadening foundations in multiple technical directions beyond information security.</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <h4 class="text-xl font-semibold text-gray-900">Higher Diploma in Cybersecurity</h4>
+                            <p class="text-gray-600">Hong Kong College of Technology | Sep 2022 - Apr 2024</p>
+                            <p class="text-gray-700 text-sm mt-2">Network security, coding, discrete mathematics, database, and information security.</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <h4 class="text-xl font-semibold text-gray-900">BEng (Hons) Civil Engineering</h4>
+                            <p class="text-gray-600">Hong Kong Polytechnic University | Sep 2015 - Jan 2019</p>
+                            <p class="text-gray-700 text-sm mt-2">Industrial training, software development projects, and system design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Skills & Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Programming -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-3xl mb-4">💻</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Programming</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Python</li>
+                        <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Java</li>
+                        <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> SQL</li>
+                    </ul>
+                </div>
+
+                <!-- Web Development -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-3xl mb-4">🌐</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Web Development</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> HTML & CSS</li>
+                        <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> JavaScript</li>
+                        <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Tailwind CSS</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Security -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-3xl mb-4">🔒</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Tools & Security</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Git & GitHub</li>
+                        <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Network Security</li>
+                        <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Firewall & VPN</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Languages</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <p class="text-gray-700 font-semibold mb-2">Mandarin Chinese</p>
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full" style="width: 100%"></div>
+                        </div>
+                        <p class="text-gray-600 text-sm mt-1">Native</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-700 font-semibold mb-2">English</p>
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full" style="width: 90%"></div>
+                        </div>
+                        <p class="text-gray-600 text-sm mt-1">Proficient</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-700 font-semibold mb-2">Cantonese</p>
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full" style="width: 70%"></div>
+                        </div>
+                        <p class="text-gray-600 text-sm mt-1">Intermediate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Experience & Awards</h2>
+            
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-8">Internship Experience</h3>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                            <h4 class="text-xl font-semibold text-gray-900">China Unicom (Hong Kong) Limited</h4>
+                            <span class="text-gray-600 text-sm">Jun 2023 - Aug 2023</span>
+                        </div>
+                        <p class="text-gray-700 font-semibold mb-2">Intern - Digitalization Department</p>
+                        <ul class="space-y-1 text-gray-700 text-sm">
+                            <li>• Developed Robotic Process Automation (RPA) solutions</li>
+                            <li>• Created automated programs for routine business processes</li>
+                            <li>• Enhanced OA platform subsidiary programs with new features</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                            <h4 class="text-xl font-semibold text-gray-900">Paul Y. Engineering Group</h4>
+                            <span class="text-gray-600 text-sm">Jun 2021 - Aug 2021</span>
+                        </div>
+                        <p class="text-gray-700 font-semibold mb-2">Intern - Quality Management</p>
+                        <ul class="space-y-1 text-gray-700 text-sm">
+                            <li>• Processed quality management data to improve efficiency</li>
+                            <li>• Assisted in ISO audits and quality assurance projects</li>
+                            <li>• Gained hands-on construction industry experience</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                            <h4 class="text-xl font-semibold text-gray-900">DUNWELL ENVIRO-TECH (HOLDINGS) LTD.</h4>
+                            <span class="text-gray-600 text-sm">Jun 2018 - Aug 2018</span>
+                        </div>
+                        <p class="text-gray-700 font-semibold mb-2">Assistant - Maintenance Department</p>
+                        <ul class="space-y-1 text-gray-700 text-sm">
+                            <li>• Improved database storage structure and deployed to production</li>
+                            <li>• Designed applications for maintenance record storage and export</li>
+                            <li>• Promoted digital record adoption in production environment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-8">Awards & Recognition</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-lg">
+                        <p class="text-gray-900 font-semibold">🏆 Outstanding Performance Scholarship</p>
+                        <p class="text-gray-700 text-sm">Self-financing Post-secondary Scholarship Scheme 2023-24</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-lg">
+                        <p class="text-gray-900 font-semibold">🎓 Outstanding Academic Performance Award</p>
+                        <p class="text-gray-700 text-sm">Hong Kong College of Technology 2023-24</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-lg">
+                        <p class="text-gray-900 font-semibold">⭐ I PLUS Achievement Award - Merit Award</p>
+                        <p class="text-gray-700 text-sm">Hong Kong College of Technology 2023-24</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-lg">
+                        <p class="text-gray-900 font-semibold">🔒 Cybersecurity Certifications</p>
+                        <p class="text-gray-700 text-sm">Network & Information Security Management Engineer (Intermediate)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-900 mb-8">Achievements</h3>
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-600">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-3">Cyber Attack and Defence Elite Training 2022/23</h4>
+                    <p class="text-gray-700 mb-2">🥈 <strong>6th place</strong> out of 14 teams from Guangdong, Hong Kong and Macau</p>
+                    <p class="text-gray-700">🥇 <strong>2nd place</strong> among Hong Kong teams</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">My Projects & Sites</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="https://github.com/califorliu" target="_blank" class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="h-32 bg-gradient-to-r from-gray-800 to-black flex items-center justify-center">
+                        <span class="text-4xl">GitHub</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition">GitHub Repository</h3>
+                        <p class="text-gray-700">Check out my code repositories and projects on GitHub</p>
+                        <p class="text-blue-600 mt-4 font-semibold">Visit →</p>
+                    </div>
+                </a>
+
+                <a href="https://wp.michaelliu.top" target="_blank" class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="h-32 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
+                        <span class="text-4xl">📝</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition">WordPress Blog</h3>
+                        <p class="text-gray-700">Read my thoughts and insights on technology and development</p>
+                        <p class="text-blue-600 mt-4 font-semibold">Visit →</p>
+                    </div>
+                </a>
+
+                <a href="https://dify.michaelliu.top" target="_blank" class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="h-32 bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center">
+                        <span class="text-4xl">🤖</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition">Dify Workspace</h3>
+                        <p class="text-gray-700">Explore AI-powered workflows and automation projects</p>
+                        <p class="text-blue-600 mt-4 font-semibold">Visit →</p>
+                    </div>
+                </a>
+
+                <a href="https://locality.michaelliu.top" target="_blank" class="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="h-32 bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center">
+                        <span class="text-4xl">📍</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition">Locality</h3>
+                        <p class="text-gray-700">Location-based application showcasing local insights</p>
+                        <p class="text-blue-600 mt-4 font-semibold">Visit →</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Let's Connect</h2>
+            <p class="text-xl text-gray-700 mb-12">I'm always interested in hearing about new projects and opportunities.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+                    <a href="mailto:michaelliu1228@gmail.com" class="text-blue-600 hover:text-blue-800 transition text-lg">michaelliu1228@gmail.com</a>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
+                    <a href="tel:+85254039536" class="text-blue-600 hover:text-blue-800 transition text-lg">+852 5403 9536</a>
+                </div>
+            </div>
+
+            <form id="contact-form" class="bg-white p-8 rounded-lg shadow-md">
+                <div class="mb-6">
+                    <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="mb-6">
+                    <input type="email" placeholder="Your Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="mb-6">
+                    <textarea placeholder="Your Message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Michael Liu</h3>
+                    <p class="text-gray-400">Computer Science student passionate about building digital solutions.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition">About</a></li>
+                        <li><a href="#skills" class="hover:text-white transition">Skills</a></li>
+                        <li><a href="#experience" class="hover:text-white transition">Experience</a></li>
+                        <li><a href="#projects" class="hover:text-white transition">Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://github.com/califorliu" target="_blank" class="hover:text-white transition">GitHub</a></li>
+                        <li><a href="mailto:michaelliu1228@gmail.com" class="hover:text-white transition">Email</a></li>
+                        <li><a href="tel:+85254039536" class="hover:text-white transition">Phone</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Michael Liu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
